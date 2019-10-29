@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Kanji - Minna no Nihongo - Bài 6</title>
-      <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-        </style>
-   </head>
-   <body>
-   <script>
-    function flip_words(pos_row, pos_col, word1, word2) {
-        var current_row = document.getElementById("myTable").rows[pos_row].cells;
-        if (current_row[pos_col].innerHTML == word1){
-            current_row[pos_col].innerHTML = word2;
-        }
-        else
-        {
-            current_row[pos_col].innerHTML = word1;
-        }
-    }
-</script>
-      <h1>Kanji - Minna no Nihongo - Bài 6</h1>
-      <h3>Click vào từng chữ để chuyển đổi giữa Kanji - Hán Việt và Cách đọc - Ý nghĩa</h3>
-      <table id = myTable>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;  
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table>
   <tr>
-    <td onclick="flip_words(0, 0, '食べます - THỰC', 'たべます - ăn')">食べます - THỰC</td>
-    <td onclick="flip_words(0, 1, '飲みます - ẨM', 'のみます - uống')">飲みます - ẨM</td>
+    <th  style="font-size:20px;">日 - NHẬT</th>
+    <th rowspan="5"></th>
+    <td style="width:50%">VD1</td>
   </tr>
   <tr>
-    <td onclick="flip_words(1, 0, '吸います - HẤP', 'すいます - hút (thuốc lá)')">吸います - HẤP</td>
-    <td onclick="flip_words(1, 1, '見ます - KIẾN', 'みます - xem, nhìn')">見ます - KIẾN</td>
+    <th style="font-size:20px;">月 - NGUYỆT</th>
+    <td style="width:50%">VD2</td>
   </tr>
   <tr>
-    <td onclick="flip_words(2, 0, '聞きます - VĂN', 'ききます - nghe')">聞きます - VĂN</td>
-    <td onclick="flip_words(2, 1, '読みます - ĐỘC', 'よみます - đọc')">読みます - ĐỘC</td>
+    <th style="font-size:20px;">火 - HỎA</th>
+    <td style="width:50%">VD3</td>
+  </tr>
+  <tr>
+    <th style="font-size:20px;">水 - THỦY</th>
+    <td style="width:50%">VD4</td>
+  </tr>
+  <tr>
+    <th style="font-size:20px;">木 - MỘC</th>
+    <td style="width:50%">VD5</td>
   </tr>
 </table>
-   </body>	
+
+</body>
 </html>
