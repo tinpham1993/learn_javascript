@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Ngữ pháp Minna no Nihongo 1 - Bài 06</title>
+<title>Minna no Nihongo 1 - Kanji</title>
 <style>
 table, th, td {
   border: 1px solid black;  
@@ -13,75 +14,42 @@ th, td {
 </head>
 <body>
 
-<p>(Click vào ví dụ để biết nghĩa)</p>
+<h2>Minna no Nihongo 1 - Kanji</h2>
+<p>(Click vào ví dụ để biết cách đọc)</p>
 
-<h3>Bài 06</h3>
-<h3>Tha động từ là động từ tác động lên danh từ</h3>
-<table id="table-06" style="width:100%">
+<h3>Bài 1</h3>
+<table id="table-01" style="width:100%">
   <tr>
-    <th>1</th>
-    <td style="width:40%">
-        <b>Tha động từ:</b><br>
-        (+) N <b>を</b> V。<br>
-        (?) なに <b>を</b> V か。</td>
-    <td onclick="flip_words(0, 4, '金曜日', 'きんようび')">
-        1. ばん ごはん <b>を</b> たべます。<br>
-        2. A: けさ なに <b>を</b> たべましたか。<br>
-           &nbsp;&nbsp;&nbsp;&nbsp;B: なに <b>も</b> たべません でした。
-        </td>
+    <th style="font-size:20px;" onclick = "flip_image(0,0,'日 - NHẬT', 'https://storage.dekiru.vn/Data/2018/03/01/kanji5017-636554925070407655.jpg')">日 - NHẬT</th>
+    <td style="width:50%" onclick="flip_words(0, 1, '日曜日', 'にちようび')">日曜日</td>
+    <th rowspan="5"></th>
+    <th  style="font-size:20px;">金 - KIM</th>
+    <td colspan="2" style="width:50%" onclick="flip_words(0, 4, '金曜日', 'きんようび')">金曜日</td>
   </tr>
   <tr>
-    <th>2</th>
-    <td>
-        <b>Làm, chơi...:</b><br>
-        (+) N <b>を</b> します。<br>
-        (?) なに <b>を</b> しますか。</td>
-    <td onclick="flip_words(0, 4, '金曜日', 'きんようび')">
-        1. ごご サッカー <b>を</b> します。<br>
-        2. ごご レポート <b>を</b> します。<br>
-        3. よる しゅくだい <b>を</b> します。<br>
-        4. よる かいぎ <b>を</b> します。<br>
-        5. にほんご  <b>を</b> べんきょうします。<br>
-        6. パーティー <b>を</b> します。<br>
-        7. A: きのう なに <b>を</b> しましたか。<br>
-           &nbsp;&nbsp;&nbsp;&nbsp;B: がこう へ きました。
-        </td>
+    <th style="font-size:20px;">月 - NGUYỆT</th>
+    <td onclick="flip_words(1, 1, '月曜日', 'げつようび')">月曜日</td>
+    <th style="font-size:20px;">土 - THỔ</th>
+    <td colspan="2" onclick="flip_words(1, 3, '土曜日', 'どようび')">土曜日</td>
   </tr>
   <tr>
-    <th>1</th>
-    <td>
-        <b>Tha động từ:</b><br>
-        (+) N <b>を</b> V。<br>
-        (?) なに <b>を</b>Vか。</td>
-    <td onclick="flip_words(0, 4, '金曜日', 'きんようび')">
-        ＊ばん ごはん <b>を</b> たべます。<br>
-        ＊けさ なに <b>を</b> たべましたか。<br>
-        ー＞なに <b>も</b> たべません でした。
-        </td>
+    <th style="font-size:20px;">火 - HỎA</th>
+    <td onclick="flip_words(2, 1, '火曜日', 'かようび')">火曜日</td>
+    <th style="font-size:20px;">山 - SƠN</th>
+    <td style="width:25%" onclick="flip_words(2, 3, '山田さん', 'やまださん')">山田さん</td>
+    <td onclick="flip_words(2, 4, '山川さん', 'やまがわさん')">山川さん</td>
   </tr>
   <tr>
-    <th>1</th>
-    <td>
-        <b>Tha động từ:</b><br>
-        (+) N <b>を</b> V。<br>
-        (?) なに <b>を</b>Vか。</td>
-    <td onclick="flip_words(0, 4, '金曜日', 'きんようび')">
-        ＊ばん ごはん <b>を</b> たべます。<br>
-        ＊けさ なに <b>を</b> たべましたか。<br>
-        ー＞なに <b>も</b> たべません でした。
-        </td>
+    <th style="font-size:20px;">水 - THỦY</th>
+    <td onclick="flip_words(3, 1, '水曜日', 'すいようび')">水曜日</td>
+    <th style="font-size:20px;">川 - XUYÊN</th>
+    <td colspan="2" onclick="flip_words(3, 3, '中川さん', 'なかがわさん')">中川さん</td>
   </tr>
   <tr>
-    <th>1</th>
-    <td>
-        <b>Tha động từ:</b><br>
-        (+) N <b>を</b> V。<br>
-        (?) なに <b>を</b>Vか。</td>
-    <td onclick="flip_words(0, 4, '金曜日', 'きんようび')">
-        ＊ばん ごはん <b>を</b> たべます。<br>
-        ＊けさ なに <b>を</b> たべましたか。<br>
-        ー＞なに <b>も</b> たべません でした。
-        </td>
+    <th style="font-size:20px;">木 - MỘC</th>
+    <td onclick="flip_words(4, 1, '木曜日', 'もくようび')">木曜日</td>
+    <th style="font-size:20px;">田 - ĐIỀN</th>
+    <td colspan="2" onclick="flip_words(4, 3, '田中さん', 'たなかさん')">田中さん</td>
   </tr>
 </table>
 
@@ -90,6 +58,17 @@ function flip_words(pos_row, pos_col, word1, word2) {
     var current_row = document.getElementById("table-01").rows[pos_row].cells;
     if (current_row[pos_col].innerHTML == word1){
         current_row[pos_col].innerHTML = word2;
+    }
+    else
+    {
+        current_row[pos_col].innerHTML = word1;
+    }
+}
+function flip_image(pos_row, pos_col, word1, img_link) {
+    var current_row = document.getElementById("table-01").rows[pos_row].cells;
+    var img = '<img src="' + img_link + '" width="100" height="50">';
+    if (current_row[pos_col].innerHTML == word1){
+        current_row[pos_col].innerHTML = img;
     }
     else
     {
